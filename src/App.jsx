@@ -24,8 +24,8 @@ const App = () => {
   }, [city, fetchWeather]);
 
   return (
-    <div className="min-h-screen bg-gray-100 flex flex-col items-center p-6 sm:p-8 md:p-10">
-      <h1 className="text-2xl sm:text-3xl font-bold mb-6">Weather Dashboard</h1>
+    <div className="min-h-screen bg-weather-bg bg-cover bg-center flex flex-col items-center p-6 sm:p-8 md:p-10">
+      <h1 className="text-2xl sm:text-3xl font-bold text-white mb-6">Weather Dashboard</h1>
       <SearchBar onSearch={handleSearch} />
       {error && <ErrorMessage message={error} />}
       {weather && <WeatherCard weather={weather} />}
